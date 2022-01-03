@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1028792548600",
+    "project_id": "messenger-d18eb",
+    "storage_bucket": "messenger-d18eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028792548600:android:3f15e9df5631a0c7c64f0d",
+        "android_client_info": {
+          "package_name": "uz.shokirov.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028792548600-flb75ci65sp2ndrha3lvbrn2in8drf8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFIuvAYkireFuFgQhQKYZZNE7Lo8HRb6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028792548600-flb75ci65sp2ndrha3lvbrn2in8drf8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

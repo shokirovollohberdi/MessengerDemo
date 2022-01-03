@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="uz.shokirov.messenger.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_phoneRegisterFragment"
+            app:destination="@id/phoneRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="uz.shokirov.messenger.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/action_userListFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_userListFragment_to_groupFragment"
+            app:destination="@id/groupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="uz.shokirov.messenger.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/phoneRegisterFragment"
+        android:name="uz.shokirov.messenger.PhoneRegisterFragment"
+        android:label="fragment_phone_register"
+        tools:layout="@layout/fragment_phone_register" >
+        <action
+            android:id="@+id/action_phoneRegisterFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_phoneRegisterFragment_to_smsFragment"
+            app:destination="@id/smsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="uz.shokirov.messenger.SmsFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" >
+        <action
+            android:id="@+id/action_smsFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="uz.shokirov.messenger.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group" />
+</navigation>
